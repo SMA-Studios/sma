@@ -2,7 +2,7 @@
   "name": "sma",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sma-studios.github.io/sma/index",
+  "homepage": "https://smastudios.net",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
