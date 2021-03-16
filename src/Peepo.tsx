@@ -1,16 +1,41 @@
 import React, { useState } from "react";
-import { Button } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Container,
+  CssBaseline,
+  Grid,
+  Paper,
+  Typography,
+} from "@material-ui/core";
+import Boys from "./Boys";
 
-interface IPeepo {
-  text: string;
-  onClick: () => void;
-}
-
-const Peepo = ({ text, onClick }: IPeepo) => {
+const Peepo = () => {
   return (
-    <Button color="inherit" onClick={onClick}>
-      {text}
-    </Button>
+    <>
+      <Box
+        display="flex"
+        p={0}
+        m={0}
+        flexDirection="column"
+        alignContent="flex-start"
+        justifyContent="flex-start"
+        style={{ backgroundColor: "#abe6ff", height: "100vh", width: "100vw" }}
+      >
+        <Paper
+          style={{
+            backgroundColor: "#0c8cc2",
+            color: "#b8eaff",
+          }}
+          elevation={6}
+        >
+          <Typography align="center" variant="h1">
+            SMA STUDIOS
+          </Typography>
+        </Paper>
+        <Boys />
+      </Box>
+    </>
   );
 };
 
