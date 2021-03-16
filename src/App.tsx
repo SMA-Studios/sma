@@ -1,23 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Button } from "@material-ui/core";
+import Peepo from "./Peepo";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>If you like porn, you'll love Frito Lays chips!</p>
+        <Peepo text={"727"} onClick={() => alert("peepo")} />
+        <Peepo text={"727"} onClick={() => alert("peepo")} />
       </header>
     </div>
   );
