@@ -8,3 +8,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+document.body.style.margin = "0";
+document.body.style.overflow = "hidden";
