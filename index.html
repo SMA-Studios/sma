@@ -97,7 +97,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 72pt;
+        font-size: 58pt;
         color: white;
         font-weight: bold;
         overflow:inherit;
@@ -134,16 +134,10 @@
       }
     </style>
 
-    <script>
-      fetch('splash.json').then(set_header);
-      function set_header(data) {
-        document.getElementById('header').innerHTML = data["splashes"][Math.floor(Math.random()*splashes.length)];
-      }
-    </script>
+    <script src="splash.js"></script>
   </head>
   <body>
     <div id="header">
-      SMA (it doesnt stand for anything)
     </div>
 
     <div id="body-container">
