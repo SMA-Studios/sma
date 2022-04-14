@@ -51,7 +51,7 @@
           justify-content: center;
       }
 
-      .user > img {
+      img.icon {
           background-color: black;
           border: 3px solid white;
           border-radius: 50%;
@@ -64,7 +64,7 @@
           transition-timing-function: ease-out;
       }
 
-      .user > img:hover {
+      img.icon:hover {
           width: 148px;
           height: 148px;
       }
@@ -82,6 +82,11 @@
           vertical-align: center;
           justify-content: center;
           margin-bottom: 36px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
       }
 
       #header {
@@ -128,11 +133,19 @@
           align-self: center;
       }
     </style>
+
+    <script>
+      fetch('splash.json').then(set_header);
+      function set_header(data) {
+        document.getElementById('header').innerHTML = data["splashes"][Math.floor(Math.random()*splashes.length)];
+      }
+    </script>
   </head>
   <body>
     <div id="header">
       SMA (it doesnt stand for anything)
     </div>
+
     <div id="body-container">
       <div id="left-sidebar">
         <div>
@@ -145,37 +158,37 @@
       <div id="cast-container">
         <div class="line" id="top-line">
           <div class="user" id="bluecrystal">
-              <img src="sma-icons/bluecrystal.png">
+              <img class="icon" src="sma-icons/bluecrystal.png">
               <div class="nameplate"><p>BlueCrystal</p></div>
           </div>
           <div class="user" id="frogyfro">
-              <img src="sma-icons/frogyfro.png">
+              <img class="icon" src="sma-icons/frogyfro.png">
               <div class="nameplate"><p>frogyfro</p></div>
           </div>
           <div class="user" id="Nico">
-              <img src="sma-icons/nico.png">
+              <img class="icon" src="sma-icons/nico.png">
               <div class="nameplate"><p>Nico</p></div>
           </div>
           <div class="user" id="ShadowLugia">
-              <img src="sma-icons/shadowlugia.png">
+              <img class="icon" src="sma-icons/shadowlugia.png">
               <div class="nameplate"><p>ShadowLugia</p></div>
           </div>
         </div>
         <div class="line" id="bot-line">
           <div class="user" id="LordGeek101">
-              <img src="sma-icons/lordgeek101.png">
+              <img class="icon" src="sma-icons/lordgeek101.png">
               <div class="nameplate"><p>LordGeek101</p></div>
           </div>
           <div class="user" id="dtm">
-              <img src="sma-icons/dtm.png">
+              <img class="icon" src="sma-icons/dtm.png">
               <div class="nameplate"><p>dtm</p></div>
           </div>
           <div class="user" id="aidanbh123">
-              <img src="sma-icons/aidanbh123.png">
+              <img class="icon" src="sma-icons/aidanbh123.png">
               <div class="nameplate"><p>aidanbh123</p></div>
           </div>
           <div class="user" id="Geosquare">
-              <img src="sma-icons/geosquare.png">
+              <img class="icon" src="sma-icons/geosquare.png">
               <div class="nameplate"><p>Geosquare</p></div>
           </div>
         </div>
