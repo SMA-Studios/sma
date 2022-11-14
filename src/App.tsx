@@ -1,15 +1,29 @@
-import React, { useState } from "react";
-import { Button, Container } from "@material-ui/core";
-import Peepo from "./Peepo";
+import SiteContainer from "./SiteContainer";
+import "./style/main.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Router,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Profile from "./Profile";
 import Boys from "./Boys";
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+    <Route path="/" element={<SiteContainer />}>
+      <Route path="" element={<Boys />} />
+      <Route path="blue" element={<Profile />} />
+    </Route>
+    )
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Peepo />
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

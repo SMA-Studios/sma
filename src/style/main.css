@@ -1,0 +1,140 @@
+body {
+    font-family: "Lato", sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #94d6ff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.cast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img.icon {
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 192px;
+    height: 192px;
+    margin: 36px;
+    margin-bottom: 16px;
+    transition-property: width, height;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-out;
+}
+
+img.icon:hover {
+    width: 216px;
+    height: 216px;
+}
+
+div.nameplate {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    margin: 0px;
+    padding: 4px;
+    font-size: 18pt;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  width: 100vw;
+  height: 128px;
+  background-color: #3aa5fd;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48pt;
+  color: white;
+  font-weight: bold;
+  overflow:inherit;
+}
+
+#left-sidebar {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 8px solid rgba(58, 165, 253, 0.5);
+}
+
+#left-sidebar > div {
+    height: 72px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+p {
+    position: relative;
+    margin: 0px;
+    align-self: center;
+}
+
+.profile-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.profile-text {
+    font-size: 42pt;
+}

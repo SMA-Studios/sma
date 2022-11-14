@@ -9,4 +9,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 document.body.style.margin = "0";
-document.body.style.overflow = "hidden";
+document.body.style.overflow = "scroll";
